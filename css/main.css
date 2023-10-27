@@ -10,7 +10,7 @@
 
 body { 
 	font-family: "Montserrat", sans-serif; 
-	background-color: #060c21; 
+	background-color: #f6ffb1; 
 } 
 
 main { 
@@ -94,7 +94,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#EBC7E8; 
+		#E0B6FF; 
 	color: white; 
 } 
 
@@ -102,7 +102,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#BFACE0; 
+		#CCADFF; 
 	color: white; 
 } 
 
@@ -110,7 +110,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#A084CA; 
+		#B8A4FF; 
 	color: white; 
 } 
 
@@ -118,7 +118,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#645CAA; 
+		#A49BFF; 
 	color: white; 
 } 
 
@@ -126,7 +126,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#4b4585; 
+		#9092FF; 
 	color: white; 
 } 
 
@@ -134,7 +134,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#413b71; 
+		#7C89FF; 
 	color: white; 
 } 
 
@@ -142,7 +142,7 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#352e5c; 
+		#6880FF; 
 	color: white; 
 } 
 
@@ -150,9 +150,9 @@ a {
 	background: linear-gradient(90deg, 
 			rgba(241, 241, 241, 0.1) 30%, 
 			rgba(113, 113, 113, 0.3) 100%), 
-		#211d38; 
+		#5477FF; 
 	color: white; 
-} 
+}
 
 .link:hover { 
 	filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2)); 
