@@ -1,58 +1,51 @@
 export const links = [ 
 	{ 
-		name: "Twitter", 
+		name: "Twitch", 
 		link: 
-"https://twitter.com/geeksforgeeks", 
+"https://www.twitch.tv/hejin0_0", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/twitch.png", 
 	}, 
 	{ 
-		name: "Linkedin", 
+		name: "트게더", 
 		link: 
-"https://www.linkedin.com/company/geeksforgeeks/", 
+"https://tgd.kr/s/hejin0_0", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/tgd.svg", 
 	}, 
 	{ 
-		name: "Instagram", 
+		name: "Youtube", 
 		link: 
-"https://www.instagram.com/geeks_for_geeks/?hl=en", 
+"https://www.youtube.com/@hejin0_0", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/youtube.png", 
+	}, 
+	{ 
+		name: "게임하는 헤징쿤", 
+		link: 
+"https://www.youtube.com/@user-mr2mc4ij5s", 
+		image: 
+"./assets/youtube.png", 
 	}, 
 	{ 
 		name: "E-mail", 
 		link: 
-"mailto:feedback@geeksforgeeks.org", 
+"mailto:booall12@naver.com", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/mail.png", 
 	}, 
 	{ 
-		name: "Telegram", 
+		name: "방송 제목 알림이", 
 		link: 
-"https://t.me/geeksforgeeks_official", 
+"https://discord.com/oauth2/authorize?client_id=1115119779854958644&permissions=2048&scope=bot", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/discord.png", 
 	}, 
 	{ 
-		name: "YouTube", 
+		name: "Instagram", 
 		link: 
-"https://www.youtube.com/@GeeksforGeeksVideos/featured", 
+"https://www.instagram.com/hejin_x_x/", 
 		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
-	}, 
-	{ 
-		name: "Discord", 
-		link: 
-"https://discord.com/invite/HvJvpjz27z", 
-		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
-	}, 
-	{ 
-		name: "Facebook", 
-		link: 
-"https://www.facebook.com/geeksforgeeks.org/", 
-		image: 
-"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png", 
+"./assets/instagram.png", 
 	}, 
 ];
