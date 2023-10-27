@@ -28,6 +28,13 @@ export const links = [
       "./assets/youtube.svg",
   },
   {
+    name: "Instagram",
+    link:
+      "https://www.instagram.com/hejin_x_x/",
+    image:
+      "./assets/instagram.svg",
+  },
+  {
     name: "E-mail",
     link:
       "mailto:booall12@naver.com",
@@ -41,11 +48,5 @@ export const links = [
     image:
       "./assets/discord.svg",
   },
-  {
-    name: "Instagram",
-    link:
-      "https://www.instagram.com/hejin_x_x/",
-    image:
-      "./assets/instagram.svg",
-  },
+
 ];
