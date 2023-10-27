@@ -1,25 +1,31 @@
-import { links } from "./links.js"; 
+// imports
+import { links } from "./links.js";
+//constants
 
-const linkContainer = document.getElementById("links"); 
+const linkContainer = document.getElementById("links");
 
-function addLink(name, link, image) { 
-	return ` 
-<a href="${link}" class="link" target="blank"> 
-	<img src="${image}"/> 
-	<span>${name} </span> 
-	<img class="linkIcon" src="./asset/link-solid.svg" alt=""/> 
-</a> 
-`; 
-} 
+//functions
 
-let allLinks = ""; 
+function addLink(name, link, image) {
+  return `
+  <a href="${link}" class="link" target="blank">
+    <img src="${image}"/>
+    <span>${name}  </span>
+    <img class="linkIcon" src="./assets/link-solid.svg" alt=""/>
+  </a>
+  `;
+}
 
-links.forEach((ele) => { 
-	let link = ele.link; 
-	let name = ele.name; 
-	let image = ele.image; 
+// logic
 
-	allLinks += addLink(name, link, image); 
-}); 
+let allLinks = "";
+
+links.forEach((ele) => {
+  let link = ele.link;
+  let name = ele.name;
+  let image = ele.image;
+
+  allLinks += addLink(name, link, image);
+});
 
 linkContainer.innerHTML = allLinks;
