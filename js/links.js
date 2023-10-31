@@ -48,5 +48,12 @@ export const links = [
     image:
       "./assets/discord.svg",
   },
+  {
+    name: "썸네일 다운로더",
+    link:
+      "thumbnail.html",
+    image:
+      "./assets/youtube.svg",
+  },
 
 ];
