@@ -240,10 +240,12 @@ a {
 
 .back-button {
   position: absolute;
-  top: 20px;
-  /* 상단에서의 위치 조정 */
-  left: 20px;
-  /* 좌측에서의 위치 조정 */
+  top: 5%;
+  /* 버튼을 상단의 50% 위치에 배치 */
+  left: 15%;
+  /* 버튼을 왼쪽의 50% 위치에 배치 */
+  transform: translate(-50%, -50%);
+  /* 버튼의 중앙이 정확히 상단 중앙에 오도록 위치 조정 */
   padding: 0.75rem 1.5rem;
   /* 버튼 내부 패딩 조정 */
   font-size: 1.125rem;
@@ -271,5 +273,12 @@ a {
   .button-link {
     width: 95vw;
     /* 화면 너비에 맞춰서 조정 */
+  }
+
+  .back-button {
+    top: 20px;
+    left: 20px;
+    transform: none;
+    /* 위치 조정을 해제 */
   }
 }
