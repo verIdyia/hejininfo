@@ -54,6 +54,7 @@ export const links = [
       "thumbnail.html",
     image:
       "./assets/youtube.svg",
+    sameTab: true,
   },
 
 ];

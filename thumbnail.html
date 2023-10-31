@@ -12,9 +12,12 @@
 </head>
 
 <body>
+  <button id="back-button" class="back-button" alt="뒤로가기">
+    ←
+  </button>
+  <!-- 뒤로 가기 버튼 추가 -->
   <main>
     <div class="logoContainer">
-      <!-- 로고 이미지 경로를 확인하세요 -->
       <img class="logo" src="assets/hejin.png" alt="헤징 ㄱㅇㅇ" />
     </div>
     <div class="greetings">유튜브 썸네일 다운로더</div>
@@ -24,6 +27,12 @@
   </main>
 
   <script src="js/downloadImage.js"></script>
+  <script>
+    document.getElementById('back-button').addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  </script>
+
 </body>
 
 </html>
