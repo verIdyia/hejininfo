@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* 반응형 디자인을 위한 스타일 조정 */
-@media (max-width: 600px) {
 
-  .input-link,
-  .button-link {
-    width: 95vw;
-    /* 화면 너비에 맞춰서 조정 */
-  }
-}
 
 * {
   padding: 0;
@@ -244,4 +236,15 @@ a {
   cursor: pointer;
   /* 클릭 가능한 커서 스타일 */
   /* 나머지 필요한 스타일 */
+}
+
+
+/* 반응형 디자인을 위한 스타일 조정 */
+@media (max-width: 600px) {
+
+  .input-link,
+  .button-link {
+    width: 95vw;
+    /* 화면 너비에 맞춰서 조정 */
+  }
 }
