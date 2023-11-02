@@ -56,5 +56,13 @@ export const links = [
       "./assets/youtube.svg",
     sameTab: true,
   },
+  {
+    name: "썸네일 갤러리(Beta)",
+    link:
+      "thumbnail_gallery.html",
+    image:
+      "./assets/hammer.svg",
+    sameTab: true,
+  },
 
 ];
