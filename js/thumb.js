@@ -35,7 +35,7 @@ function loadThumbnails() {
   fetch('./data/IDs.txt')
     .then(response => response.text())
     .then(text => {
-      const videoIDs = text.trim().split('\n').slice(currentIndex, currentIndex + 10); // Load next 10 thumbnails
+      const videoIDs = text.trim().split('\n').slice(currentIndex, currentIndex + 16); // Load next 16 thumbnails
       currentIndex += videoIDs.length; // Update the current index
 
       const container = document.getElementById('thumbnail-container');
