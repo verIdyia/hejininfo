@@ -35,11 +35,11 @@ export const links = [
       "./assets/instagram.svg",
   },
   {
-    name: "E-mail",
+    name: "치지직",
     link:
-      "mailto:booall12@naver.com",
+      "https://chzzk.naver.com/live/21a0de8b586c517181d76f183272de57",
     image:
-      "./assets/mail.svg",
+      "./assets/czz.png",
   },
   {
     name: "방송 제목 알림이",
