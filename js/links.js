@@ -51,7 +51,7 @@ export const links = [
   {
     name: "썸네일 다운로더",
     link:
-      "thumbnail.html",
+      "thumbnail",
     image:
       "./assets/youtube.svg",
     sameTab: true,
@@ -59,7 +59,7 @@ export const links = [
   {
     name: "썸네일 갤러리(Beta)",
     link:
-      "thumbnail_gallery.html",
+      "thumbnail_gallery",
     image:
       "./assets/hammer.svg",
     sameTab: true,
