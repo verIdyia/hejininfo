@@ -14,11 +14,11 @@ export const links = [
       "./assets/czz.png",
   },
   {
-    name: "트게더",
+    name: "팬카페",
     link:
-      "https://tgd.kr/s/hejin0_0",
+      "https://cafe.naver.com/hejin0w0",
     image:
-      "./assets/tgd.svg",
+      "./assets/네이버_카페_로고.png",
   },
   {
     name: "Youtube",
@@ -55,6 +55,13 @@ export const links = [
     image:
       "./assets/youtube.svg",
     sameTab: true,
+  },
+  {
+    name: "트게더",
+    link:
+      "https://tgd.kr/s/hejin0_0",
+    image:
+      "./assets/tgd.svg",
   },
 
 ];
