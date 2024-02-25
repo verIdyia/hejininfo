@@ -1,12 +1,5 @@
 export const links = [
   {
-    name: "Twitch",
-    link:
-      "https://www.twitch.tv/hejin0_0",
-    image:
-      "./assets/twitch.svg",
-  },
-  {
     name: "치지직",
     link:
       "https://chzzk.naver.com/live/21a0de8b586c517181d76f183272de57",
@@ -55,6 +48,13 @@ export const links = [
     image:
       "./assets/youtube.svg",
     sameTab: true,
+  },
+  {
+    name: "Twitch",
+    link:
+      "https://www.twitch.tv/hejin0_0",
+    image:
+      "./assets/twitch.svg",
   },
   {
     name: "트게더",
