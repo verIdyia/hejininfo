@@ -166,7 +166,7 @@ a {
 }
 
 /* 버튼 스타일 */
-.button-link, .back-button {
+.button-link {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   font-weight: bold;
@@ -177,41 +177,26 @@ a {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* 버튼들 사이의 간격을 동일하게 */
 }
 
-.button-link:hover, .back-button:hover {
+
+.button-link:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+
+/* 뒤로 가기 버튼 스타일 */
 .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  /* 기존 position 속성 제거로 기본 흐름에 따라 배치되게 함 */
+  /* 추가 스타일이 필요하면 여기에 작성 */
 }
 
-/* 반응형 디자인 */
+/* 필요한 경우 반응형 디자인 조정 */
 @media (max-width: 600px) {
-  .logoContainer {
-    height: 150px;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
   .input-link,
-  .button-link,
-  .link {
+  .button-link {
     width: 90vw;
-  }
-
-  .link {
-    height: 3rem;
-  }
-
-  .link span {
-    font-size: 1rem;
   }
 }
