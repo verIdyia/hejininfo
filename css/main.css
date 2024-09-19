@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #ffdfb7;
+  background: linear-gradient(135deg, #ffdfb7 0%, #ffb7d5 100%);
 }
 
 main {
