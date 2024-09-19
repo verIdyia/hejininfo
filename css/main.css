@@ -16,6 +16,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 a {
@@ -24,8 +25,8 @@ a {
   font-weight: 600;
 }
 
+/* 로고 스타일 */
 .logo {
-  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -34,17 +35,18 @@ a {
 
 .logoContainer {
   margin: 1rem 0 2rem;
-  position: relative;
   height: 225px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
 
+/* 텍스트 스타일 */
 .greetings {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   color: black;
+  text-align: center;
 }
 
 .middle-text {
@@ -59,8 +61,10 @@ a {
   font-weight: 500;
   margin-bottom: 2rem;
   color: black;
+  text-align: center;
 }
 
+/* 링크 스타일 */
 .links {
   display: flex;
   flex-direction: column;
@@ -102,6 +106,7 @@ a {
   filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
 }
 
+/* 링크 배경색 */
 .link:nth-child(1) {
   background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #E0B6FF;
   color: white;
@@ -143,17 +148,66 @@ a {
   color: white;
 }
 
+/* 입력 필드 스타일 */
+.input-link {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  width: 600px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* 버튼 스타일 */
+.button-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+  background-color: #9092FF;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.button-link:hover {
+  background-color: #7C89FF;
+}
+
+/* 뒤로가기 버튼 스타일 */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+  background-color: #9092FF;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #7C89FF;
+}
+
+/* 반응형 디자인 */
 @media (max-width: 600px) {
-  .logo img {
-    width: 200px;
+  .logo {
+    width: 150px;
+  }
+
+  .input-link,
+  .button-link,
+  .link {
+    width: 90vw;
   }
 
   .link span {
     width: 70%;
-  }
-
-  .link {
-    width: 95vw;
   }
 
   .link:hover {
