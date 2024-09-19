@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-
   transition: all 0.3s ease-in-out;
 }
 
@@ -36,36 +33,17 @@ a {
 }
 
 .logoContainer {
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
   position: relative;
   height: 225px;
   aspect-ratio: 1;
   border-radius: 50%;
-  margin-bottom: 2rem;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-}
-
-.link {
-  height: 2.75rem;
-  width: 600px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
-
-  margin: 0.5rem 0;
-  border-radius: 15px;
 }
 
 .greetings {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   color: black;
 }
 
@@ -83,6 +61,22 @@ a {
   color: black;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  height: 2.75rem;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+}
+
 .link span {
   width: 80%;
   text-align: center;
@@ -93,110 +87,69 @@ a {
   aspect-ratio: 1;
 }
 
-.linkIcon {
-  height: 2rem !important;
-  aspect-ratio: 1;
-}
-
-.link:nth-child(1) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #E0B6FF;
-  color: white;
-}
-
-.link:nth-child(2) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #CCADFF;
-  color: white;
-}
-
-.link:nth-child(3) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #B8A4FF;
-  color: white;
-}
-
-.link:nth-child(4) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #A49BFF;
-  color: white;
-}
-
-.link:nth-child(5) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #9092FF;
-  color: white;
-}
-
-.link:nth-child(6) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #7C89FF;
-  color: white;
-}
-
-.link:nth-child(7) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #6880FF;
-  color: white;
-}
-
-.link:nth-child(8) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #858585;
-  color: white;
-}
-
-.link:nth-child(9) {
-  background: linear-gradient(90deg,
-      rgba(241, 241, 241, 0.1) 30%,
-      rgba(113, 113, 113, 0.3) 100%),
-    #858585;
-  color: white;
-}
-
 .link:hover {
   filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
   transform: scale(1.05);
 }
 
-.link>* {
+.link > * {
   transition: all 0.3s ease-in-out;
   transition-delay: 0.1s;
 }
 
-.link:hover>* {
+.link:hover > * {
   transform: scale(1.1);
   filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
 }
 
-@media (max-width: 600px) {
-  body {
-    background-size: 100%;
-  }
+.link:nth-child(1) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #E0B6FF;
+  color: white;
+}
 
+.link:nth-child(2) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #CCADFF;
+  color: white;
+}
+
+.link:nth-child(3) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #B8A4FF;
+  color: white;
+}
+
+.link:nth-child(4) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #A49BFF;
+  color: white;
+}
+
+.link:nth-child(5) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #9092FF;
+  color: white;
+}
+
+.link:nth-child(6) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #7C89FF;
+  color: white;
+}
+
+.link:nth-child(7) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #6880FF;
+  color: white;
+}
+
+.link:nth-child(8),
+.link:nth-child(9) {
+  background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #858585;
+  color: white;
+}
+
+@media (max-width: 600px) {
   .logo img {
     width: 200px;
   }
 
   .link span {
     width: 70%;
-    text-align: center;
   }
 
   .link {
@@ -205,188 +158,5 @@ a {
 
   .link:hover {
     transform: scale(1.01);
-  }
-}
-
-/* 입력창 스타일 */
-.input-link {
-  padding: 0.5rem;
-  /* 들여쓰기 및 패딩 조정 */
-  margin-bottom: 1rem;
-  /* 여백 추가 */
-  width: 600px;
-  /* 너비 조정 */
-  border-radius: 15px;
-  /* 둥근 테두리 */
-  border: 1px solid #ccc;
-  /* 테두리 스타일 */
-  font-size: 1rem;
-  /* 글자 크기 */
-  /* 나머지 필요한 스타일 */
-}
-
-/* 버튼 스타일 */
-.button-link {
-  padding: 0.75rem 1.5rem;
-  /* 버튼 내부 패딩 조정 */
-  font-size: 1.125rem;
-  /* 글자 크기 확대 */
-  font-weight: bold;
-  /* 글자 굵게 */
-  color: white;
-  /* 글자 색상 */
-  background-color: #9092FF;
-  /* 배경색 */
-  border: none;
-  /* 테두리 없음 */
-  border-radius: 15px;
-  /* 둥근 테두리 */
-  cursor: pointer;
-  /* 클릭 가능한 커서 스타일 */
-  /* 나머지 필요한 스타일 */
-}
-
-.back-button {
-  position: absolute;
-  top: 5%;
-  /* 버튼을 상단의 50% 위치에 배치 */
-  left: 15%;
-  /* 버튼을 왼쪽의 50% 위치에 배치 */
-  transform: translate(-50%, -50%);
-  /* 버튼의 중앙이 정확히 상단 중앙에 오도록 위치 조정 */
-  padding: 0.75rem 1.5rem;
-  /* 버튼 내부 패딩 조정 */
-  font-size: 1.125rem;
-  /* 글자 크기 확대 */
-  font-weight: bold;
-  /* 글자 굵게 */
-  color: white;
-  /* 글자 색상 */
-  background-color: #9092FF;
-  /* 배경색 */
-  border: none;
-  /* 테두리 없음 */
-  border-radius: 15px;
-  /* 둥근 테두리 */
-  cursor: pointer;
-  /* 클릭 가능한 커서 스타일 */
-  /* 나머지 필요한 스타일 */
-}
-
-/* Add any additional styling you need here */
-#thumbnail-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 10px;
-  padding: 10px;
-  /* 변경: 배경색 추가 */
-}
-
-.thumbnail-wrapper {
-  width: 180px;
-  overflow: hidden;
-  position: relative;
-}
-
-.thumbnail {
-  display: block;
-  /* 변경: 블록 요소로 설정 */
-  width: 100%;
-  /* 변경: 이미지 너비를 컨테이너에 맞춤 */
-  object-fit: cover;
-  /* 변경: 이미지가 컨테이너를 가득 채우도록 설정 */
-  object-position: center center;
-  /* 변경: 이미지 중앙이 보이도록 설정 */
-}
-
-/* Style for loading text */
-.loading {
-  width: 100%;
-  text-align: center;
-}
-
-
-.modal {
-  display: none;
-  align-items: center;
-  /* 세로 중앙 정렬 */
-  justify-content: center;
-  /* 가로 중앙 정렬 */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-
-.modal-content {
-  display: block;
-  /* block으로 설정 */
-  margin: auto;
-  /* auto 마진을 사용하여 중앙 정렬 */
-  max-width: 80%;
-  /* 이미지가 컨테이너를 벗어나지 않도록 함 */
-}
-
-/* 클로즈 버튼 */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  color: #fff;
-  font-size: 35px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 캡션 */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* 반응형 디자인을 위한 스타일 조정 */
-@media (max-width: 600px) {
-
-  .input-link,
-  .button-link {
-    width: 95vw;
-    /* 화면 너비에 맞춰서 조정 */
-  }
-
-  .back-button {
-    top: 20px;
-    left: 20px;
-    transform: none;
-    /* 위치 조정을 해제 */
-  }
-}
-
-@media (max-width: 300px) {
-
-  .back-button {
-    top: 20px;
-    left: 20px;
-    transform: none;
-    display: block;
-    /* 위치 조정을 해제 */
   }
 }
