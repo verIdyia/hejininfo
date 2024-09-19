@@ -3,12 +3,12 @@
 * {
   padding: 0;
   margin: 0;
-  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #ffdfb7;
+  background: linear-gradient(135deg, #ffdfb7 0%, #ffb7d5 100%);
 }
 
 main {
@@ -17,6 +17,7 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 100vh;
 }
 
 a {
@@ -25,12 +26,16 @@ a {
   font-weight: 600;
 }
 
-/* 로고 스타일 */
 .logo {
   height: 100%;
   width: 100%;
   border-radius: 50%;
   margin-top: 8%;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(5deg) scale(1.05);
 }
 
 .logoContainer {
@@ -38,9 +43,9 @@ a {
   height: 225px;
   aspect-ratio: 1;
   border-radius: 50%;
+  overflow: hidden;
 }
 
-/* 텍스트 스타일 */
 .greetings {
   font-size: 2rem;
   font-weight: 700;
@@ -54,6 +59,7 @@ a {
   font-weight: 550;
   margin-bottom: 1.5rem;
   color: black;
+  text-align: center;
 }
 
 .about {
@@ -64,10 +70,10 @@ a {
   text-align: center;
 }
 
-/* 링크 스타일 */
 .links {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .link {
@@ -75,37 +81,31 @@ a {
   width: 600px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   color: #000;
   margin: 0.5rem 0;
   border-radius: 15px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.link span {
-  width: 80%;
-  text-align: center;
+.link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .link img {
   height: 2rem;
   aspect-ratio: 1;
+  margin-right: 1rem;
 }
 
-.link:hover {
-  filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
-  transform: scale(1.05);
+.link span {
+  flex: 1;
+  text-align: left;
 }
-
-.link > * {
-  transition: all 0.3s ease-in-out;
-  transition-delay: 0.1s;
-}
-
-.link:hover > * {
-  transform: scale(1.1);
-  filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
-}
-
 /* 링크 배경색 */
 .link:nth-child(1) {
   background: linear-gradient(90deg, rgba(241, 241, 241, 0.1) 30%, rgba(113, 113, 113, 0.3) 100%), #E0B6FF;
@@ -156,48 +156,49 @@ a {
   border-radius: 15px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease;
+}
+
+.input-link:focus {
+  border: 1px solid #9092FF;
+  outline: none;
 }
 
 /* 버튼 스타일 */
-.button-link {
+.button-link, .back-button {
   padding: 0.75rem 1.5rem;
   font-size: 1.125rem;
   font-weight: bold;
   color: white;
-  background-color: #9092FF;
+  background: linear-gradient(90deg, #9092FF, #7C89FF);
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   margin-bottom: 2rem;
 }
 
-.button-link:hover {
-  background-color: #7C89FF;
+.button-link:hover, .back-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* 뒤로가기 버튼 스타일 */
 .back-button {
   position: absolute;
   top: 20px;
   left: 20px;
-  padding: 0.5rem 1rem;
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: white;
-  background-color: #9092FF;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.back-button:hover {
-  background-color: #7C89FF;
 }
 
 /* 반응형 디자인 */
 @media (max-width: 600px) {
+  .logoContainer {
+    height: 150px;
+  }
+
   .logo {
-    width: 150px;
+    width: 100%;
   }
 
   .input-link,
@@ -206,11 +207,11 @@ a {
     width: 90vw;
   }
 
-  .link span {
-    width: 70%;
+  .link {
+    height: 3rem;
   }
 
-  .link:hover {
-    transform: scale(1.01);
+  .link span {
+    font-size: 1rem;
   }
 }
