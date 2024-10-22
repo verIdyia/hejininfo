@@ -40,9 +40,4 @@ export const links = [
     link: "https://www.twitch.tv/hejin0_0",
     image: "./assets/twitch.svg",
   },
-  {
-    name: "트게더",
-    link: "https://tgd.kr/s/hejin0_0",
-    image: "./assets/tgd.svg",
-  },
 ];
