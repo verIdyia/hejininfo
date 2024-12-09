@@ -16,7 +16,7 @@ export const links = [
   },
   {
     name: "게임하는 헤징쿤",
-    link: "https://www.youtube.com/@user-mr2mc4ij5s",
+    link: "https://www.youtube.com/@%EA%B2%8C%EC%9E%84%ED%95%98%EB%8A%94%ED%97%A4%EC%A7%95%EC%BF%A4",
     image: "./assets/youtube.svg",
   },
   {
