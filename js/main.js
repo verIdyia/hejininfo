@@ -18,10 +18,9 @@ links.forEach(({ name, link, image, sameTab }) => {
 });
 linkContainer.innerHTML = allLinks;
 
-/* === 치지직 API를 통한 라이브 상태 체크 === */
 async function checkLiveStatus() {
   try {
-    const apiURL = "https://api.chzzk.naver.com/polling/v2/channels/16fc49ff5ba7ec5d25a5a978cee3bdda/live-status";
+    const apiURL = "http://verbal.dothome.co.kr/live_status.php";
     
     const response = await fetch(apiURL);
     if (!response.ok) {
